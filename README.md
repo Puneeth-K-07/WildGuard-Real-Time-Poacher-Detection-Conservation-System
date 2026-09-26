@@ -1,51 +1,63 @@
-## Wildlife Poacher Detection and Alerting system in Real-time using Deep Learning
-This repo consists of code used for training and detecting Poachers in wild using custom YoloV8 model through webcam/external device.<br>
+# 🐾 WildGuard – Real-Time Poacher Detection & Conservation System
 
-* The Dataset is collected from google images using [Download All Images](https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm) chrome extension and labelling is done using [Label Img](https://github.com/tzutalin/labelImg) tool.<br>
+WildGuard is an AI-powered wildlife protection system designed to detect potential poachers and suspicious activities in wildlife areas using deep learning and computer vision.
 
-* Some of the readily labelled datasets are available here @[Google's Open Image Dataset v5](https://storage.googleapis.com/openimages/web/index.html). You label dataset either using LabelImg or Online CVAT tool.<br>
+The system uses **YOLOv8** for object detection and **Flask** to provide a web-based interface for uploading images, processing videos, and monitoring detection results.
 
+## 🚀 Features
 
+- Real-time poacher detection
+- YOLOv8-based object detection
+- Webcam/live camera detection
+- Image upload and detection
+- Video upload and detection
+- Detection result visualization
+- Detection logging
+- Deforestation/tree-count logging
+- Web-based monitoring dashboard
+- Sample test images and videos
 
+## 🛠️ Technologies Used
 
-|  🧾 Colab Notebook  |   🗃 Dataset with Annotations   | 🔑 Trained YOLOv3 Model | 🧠 Complete Folder  |
-|------------|-------------|-----------|-----------|
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/snehitvaddi/Animal-Poacher-Detection-and-Alerting-System/blob/master/YOLOv3-Training-notebook.ipynb) | [Images & Annotations](https://drive.google.com/file/d/1i7odPzL8kWigesajYkMM0XopQhh1g86J/view?usp=sharing) | [Download Model](https://drive.google.com/file/d/1_20xIEqXsnoQBakMGD3llYAm1D0Dmi0A/view?usp=sharing) | [Project Folder](https://drive.google.com/drive/folders/17S0nm_11wjBmDVhYezXs_K17wsZkuKsx?usp=sharing)  |
+- Python
+- YOLOv8
+- OpenCV
+- Flask
+- HTML
+- CSS
+- CSV
+- Computer Vision
+- Deep Learning
 
-#### 💡 Sample Inputs 
+## 📂 Project Structure
 
-|  1.jpg | 2.jpg  | pic1.jpg | pic2.jpg |
-|------------|-------------|-----------|---------|
-| <img src="https://github.com/snehitvaddi/Poacher-Detection/blob/master/test_images/1.jpg"  width="250" height="200"> | <img src="https://github.com/snehitvaddi/Poacher-Detection/blob/master/test_images/2.jpg"  width="250" height="200">|<img src="https://github.com/snehitvaddi/Poacher-Detection/blob/master/test_images/pic1.jpg"  width="250" height="200">|<img src="https://github.com/snehitvaddi/Poacher-Detection/blob/master/test_images/pic2.jpg"  width="250" height="200">|
-
-#### 🧠 Sample Outputs
-|  1.jpg | 2.jpg  | pic1.jpg | pic2.jpg |
-|------------|-------------|-----------|---------|
-| <img src="https://github.com/snehitvaddi/Poacher-Detection/blob/master/outputs/4.png"  width="250" height="200"> | <img src="https://github.com/snehitvaddi/Poacher-Detection/blob/master/outputs/5.png"  width="250" height="200">|<img src="https://github.com/snehitvaddi/Poacher-Detection/blob/master/outputs/6.png"  width="250" height="200">|<img src="https://github.com/snehitvaddi/Poacher-Detection/blob/master/outputs/pic2.png"  width="250" height="200">|
-
-****************************************************************************************************************************************
-### 📂 Files Required :
-* Darknet repository
-* Labeled Custom Dataset
-* Custom .cfg file
-* obj.data and obj.names files
-* train.txt file (test.txt is optional here as well)
-
-
-****************************************************************************************************************************************
-
-### ⚡ Colab Hack: ⭐
-If you are a student like me, and unable to pay such amount for premium Google Colab features like uninterupted GPU usage, here is a jugad(hack) for you😉<br>
-
-👉Step 1: In colab notebook, type CTRL + SHIFT + I (Inspect element)<br>
-👉Step 2: Go to the console tab and paste the code given in the image below.<br>
-
-`function ClickConnect(){`<br>
-`console.log("Working"); `<br>
-`document.querySelector("colab-toolbar-button#connect").click() `<br>
-`}`<br>
-`setInterval(ClickConnect,60000)`<br>
-****************************************************************************************************************************************
-## 🧠 Further Ideas
-* Integrate the model with IOT and leverage Cloud services for real-time monitoring and alerting system.
-* Any Ideas/suggestions/contributions are highly appreciable.
+```text
+WildGuard-Real-Time-Poacher-Detection-Conservation-System/
+│
+├── app.py
+├── detect_webcam.py
+├── requirements.txt
+├── README.md
+├── LICENSE
+├── yolov8n.pt
+│
+├── models/
+│   └── coco.names
+│
+├── templates/
+│   ├── dashboard.html
+│   ├── index.html
+│   ├── live_camera.html
+│   ├── result.html
+│   ├── result_view.html
+│   ├── show_image.html
+│   ├── show_video.html
+│   ├── upload_forest.html
+│   ├── upload_image.html
+│   └── upload_video.html
+│
+├── test_images/
+│
+├── deforestation_log.csv
+├── detections.csv
+└── tree_counts.csv
