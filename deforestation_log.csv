@@ -1,0 +1,15 @@
+Timestamp,LossPercent,Before,After,Diff
+2025-11-11 18:44:54,13.21,before_images 2.jpg,after_images 1.jpg,deforestation_diff_502427.jpg
+2025-11-15 12:50:10,0.0,sat_20180101_84715.png,sat_20250101_89258.png,deforestation_diff_892073.jpg
+2025-11-15 12:50:41,0.0,sat_20150101_92294.png,sat_20251115_92910.png,deforestation_diff_352640.jpg
+2025-11-15 12:51:25,0.0,sat_20000101_67862.png,sat_20250101_17018.png,deforestation_diff_605899.jpg
+2025-11-15 12:51:46,0.0,sat_20000101_67430.png,sat_20250101_48285.png,deforestation_diff_20093.jpg
+2025-11-15 12:53:35,0.0,sat_20190101_91445.png,sat_20250101_29145.png,deforestation_diff_282187.jpg
+2025-11-15 13:20:25,0.0,sat_20200101_26234.png,sat_20250101_91217.png,deforestation_diff_876710.jpg
+2025-11-15 13:20:38,0.0,sat_20200101_53531.png,sat_20250101_78079.png,deforestation_diff_114816.jpg
+2025-11-15 13:29:42,0.0,sat_20200101_33659.png,sat_20250101_43718.png,deforestation_diff_247444.jpg
+2025-11-15 13:30:20,0.0,sat_20150101_98805.png,sat_20250101_21820.png,deforestation_diff_583617.jpg
+2025-11-15 13:33:40,0.0,sat_20190101_83845.png,sat_20250101_58080.png,deforestation_diff_958757.jpg
+2025-11-15 13:33:49,0.0,sat_20190101_75807.png,sat_20250101_92046.png,deforestation_diff_508593.jpg
+2025-11-15 13:40:22,0.0,sat_20180101_34319.png,sat_20250101_72974.png,deforestation_diff_643566.jpg
+2025-11-15 13:40:53,0.0,sat_20190101_68271.png,sat_20250101_33779.png,deforestation_diff_831518.jpg

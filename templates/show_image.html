@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <title>Detection Result</title>
+</head>
+<body style="text-align:center;">
+  <h1>🖼️ Detection Result</h1>
+  <img src="{{ url_for('send_uploaded_file', filename=result_image) }}" width="800">
+  <p><a href="/upload_image">← Upload Another</a></p>
+  <p><a href="/">🏠 Home</a></p>
+</body>
+</html>

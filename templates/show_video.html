@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>Processed Video</title>
+  <style>
+    body { text-align: center; font-family: Arial, sans-serif; background: #121212; color: #fff; }
+    video { border: 3px solid #00ff00; border-radius: 10px; margin-top: 20px; }
+    a { color: #00ff00; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>🎬 Processed Video</h1>
+  <video width="800" controls autoplay>
+    <source src="{{ url_for('send_uploaded_file', filename=result_video) }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p><a href="/upload_video">← Upload Another</a></p>
+  <p><a href="/">🏠 Home</a></p>
+</body>
+</html>

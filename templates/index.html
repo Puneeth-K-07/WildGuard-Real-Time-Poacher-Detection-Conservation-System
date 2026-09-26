@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>🐾 Poacher Detection Control Panel</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #0b0b0b, #000);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* Animated background dots */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, #00ffcc22 1px, transparent 1px);
+      background-size: 60px 60px;
+      animation: moveDots 20s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes moveDots {
+      from {
+        background-position: 0 0;
+      }
+
+      to {
+        background-position: 300px 600px;
+      }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #00ffcc;
+      text-shadow: 0 0 20px #00ffcc;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #bbb;
+      max-width: 600px;
+      margin-top: 10px;
+      margin-bottom: 50px;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Button grid */
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      width: 80%;
+      max-width: 900px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 140px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #00ffcc44;
+      border-radius: 15px;
+      color: #00ffcc;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 15px #00ffcc22;
+    }
+
+    .btn:hover {
+      background: rgba(0, 255, 200, 0.2);
+      box-shadow: 0 0 25px #00ffcc99;
+      transform: translateY(-6px);
+      color: #fff;
+    }
+
+    .btn span {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      transition: 0.3s;
+    }
+
+    .btn:hover span {
+      transform: scale(1.2);
+    }
+
+    /* Webcam container */
+    #videoContainer {
+      display: none;
+      margin-top: 50px;
+      animation: fadeIn 1s ease;
+    }
+
+    iframe {
+      border: 3px solid #00ffcc;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00ffcc55;
+    }
+
+    footer {
+      margin-top: 80px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🐾 AI Poacher Detection System</h1>
+    <p>
+      Real-time AI surveillance for wildlife safety. Detect, alert, and log poachers instantly
+      using computer vision and smart notifications.
+    </p>
+
+    <div class="btn-grid">
+      <a href="/upload_image" class="btn"><span>📸</span>Upload Image</a>
+      <a href="/upload_video" class="btn"><span>🎞️</span>Upload Video</a>
+      <button id="startWebcam" class="btn"><span>🎥</span>Start Webcam</button>
+      <a href="/dashboard" class="btn"><span>📊</span>View Dashboard</a>
+      <a href="/upload_forest" class="btn">🌲 Upload Aerial (Tree Count)</a>
+      <a href="/add_live_source" class="btn">📡 Add Live Camera</a>
+
+    </div>
+
+    <div id="videoContainer">
+      <h2 style="color:#00ffcc; margin-top:30px;">Live Webcam Feed</h2>
+      <iframe id="videoFrame" src="" width="800" height="600"></iframe>
+      <br>
+      <button id="stopWebcam" class="btn" style="margin-top:20px;">🛑 Stop Webcam</button>
+    </div>
+
+    <footer>© {{ datetime.utcnow().year if datetime else 2025 }} Poacher AI | Designed by Puneeth </footer>
+  </div>
+
+  <script>
+    const startBtn = document.getElementById('startWebcam');
+    const stopBtn = document.getElementById('stopWebcam');
+    const container = document.getElementById('videoContainer');
+    const frame = document.getElementById('videoFrame');
+
+    startBtn.addEventListener('click', () => {
+      container.style.display = 'block';
+      frame.src = "/video_feed";
+      startBtn.style.display = 'none';
+    });
+
+    stopBtn.addEventListener('click', () => {
+      frame.src = "";
+      container.style.display = 'none';
+      startBtn.style.display = 'inline-block';
+    });
+  </script>
+</body>
+
+</html>

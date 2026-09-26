@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Live Poacher Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   sans-serif;
+      background: #020b0f;
+      color: #e3f6ff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 12px;
+    }
+
+    .header {
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .title {
+      font-size: 1.4rem;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+
+    .video-wrapper {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #11ffee33;
+      box-shadow: 0 0 12px #11ffee44;
+      background: #000;
+      margin: 10px 0 16px;
+    }
+
+    .video-wrapper img {
+      width: 100%;
+      display: block;
+    }
+
+    .status-card {
+      width: 100%;
+      max-width: 480px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: #041920;
+      border: 1px solid #11ffee33;
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+
+    .status-card strong {
+      color: #5cfccf;
+    }
+
+    .btn-row {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    a.btn {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 0;
+      border-radius: 999px;
+      border: 1px solid #11ffeeaa;
+      color: #11ffee;
+      font-size: 0.85rem;
+    }
+
+    a.btn.secondary {
+      border-color: #888;
+      color: #ddd;
+    }
+
+    @media (max-width: 480px) {
+      .title { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="title">Live Poacher Detection</div>
+    <div class="subtitle">Webcam · 24/7 monitoring · Email alerts with proof</div>
+  </div>
+
+  <div class="video-wrapper">
+    <!-- Live stream from Flask -->
+    <img src="{{ url_for('video_feed') }}" alt="Live camera stream">
+  </div>
+
+  <div class="status-card">
+    <p><strong>How it works:</strong></p>
+    <p>
+      • Camera runs continuously and every frame is scanned by AI.<br>
+      • If a poacher (person) is detected, a proof image is saved and
+        an alert email is sent automatically.<br>
+      • Alerts are throttled so you don't get spammed.
+    </p>
+  </div>
+
+  <div class="btn-row">
+    <a href="{{ url_for('index') }}" class="btn secondary">⬅ Back to Home</a>
+    <a href="{{ url_for('dashboard') }}" class="btn">📊 View Dashboard</a>
+  </div>
+
+</body>
+</html>

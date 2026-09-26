@@ -1,0 +1,55 @@
+Timestamp,Source,Result
+2025-11-09 15:29:26,Image,Poacher Detected
+2025-11-09 15:31:15,Video,Poacher Detected
+2025-11-09 15:33:22,Webcam,Poacher Detected
+2025-11-09 15:39:12,Webcam,Poacher Detected
+2025-11-09 16:48:45,Webcam,Poacher Detected
+2025-11-09 17:03:55,Image,No Poacher Detected
+2025-11-09 17:48:50,Image,Poacher Detected,11.6076,76.7419
+2025-11-09 17:49:43,Video,Poacher Detected,11.6066,76.5684
+2025-11-09 17:51:24,Video,Poacher Detected,11.4032,76.4699
+2025-11-09 17:58:26,Image,No Poacher Detected,11.7753,76.7803
+2025-11-09 17:59:49,Image,No Poacher Detected,11.7432,76.4093
+2025-11-09 18:03:26,Image,No Poacher Detected
+2025-11-09 18:33:26,Image,Poacher Detected,11.6267,76.4134
+2025-11-09 19:12:22,Image,Poacher Detected,11.7271,76.7201
+2025-11-10 17:04:35,Image,Poacher Detected,11.5856,76.5519
+2025-11-10 17:08:55,Video,Poacher Detected,11.4499,76.6513
+2025-11-10 17:13:42,Video,Poacher Detected,11.4672,76.678
+2025-11-11 16:36:36,Image,Poacher Detected,11.7562,76.5788
+2025-11-11 17:41:56,Image,Poacher Detected,11.7119,76.7911
+2025-11-11 17:44:57,Image,Poacher Detected,11.4875,76.6395
+2025-11-11 17:46:27,Image,Poacher Detected,11.7839,76.5459
+2025-11-11 17:52:06,Image,Poacher Detected,11.5114,76.7778
+2025-11-11 18:02:29,Image,No Poacher Detected,11.6221,76.6402
+2025-11-11 18:03:50,Image,No Poacher Detected,11.6664,76.6041
+2025-11-11 18:05:28,Image,No Poacher Detected,11.6994,76.6262
+2025-11-11 18:15:00,Image,No Poacher Detected,11.745,76.6413
+2025-11-11 18:18:06,Video,Poacher Detected,11.4786,76.6563
+2025-11-11 18:18:45,Image,Poacher Detected,11.6894,76.6227
+2025-11-11 18:39:49,Image,Poacher Detected,11.6478,76.7706
+2025-11-11 18:41:37,Video,Poacher Detected,11.5034,76.5736
+2025-11-15 14:01:29,Image,Poacher Detected,11.6056,76.4236
+2025-11-18 18:10:40,Image,Poacher Detected,11.6059,76.4835
+2025-11-18 19:16:17,Video,Poacher Detected,11.7106,76.6758
+2025-11-18 19:22:29,Image,No Poacher Detected,11.63,76.7349
+2025-11-18 19:22:47,Image,Poacher Detected,11.5159,76.7634
+2025-11-19 09:34:53,Image,Poacher Detected,11.5808,76.7746
+2025-11-19 09:35:16,Video,Poacher Detected,11.783,76.5479
+2025-11-24 13:21:31,Image,No Poacher Detected,11.7918,76.47
+2025-11-24 13:22:09,Image,No Poacher Detected,11.6908,76.7825
+2025-11-24 20:02:08,Image,Poacher Detected,11.7417,76.7851
+2025-11-24 20:03:45,Video,Poacher Detected,11.7743,76.6493
+2025-11-24 20:08:50,Webcam,Poacher Detected,11.6337,76.5959
+2025-11-26 18:39:47,Webcam,Poacher Detected,11.4746,76.5562
+2025-11-26 18:41:00,Video,Poacher Detected,11.519,76.5005
+2025-11-26 19:18:05,Video,Poacher Detected,11.5159,76.5356
+2025-11-26 19:19:38,Image,Poacher Detected,11.7861,76.4853
+2025-11-26 19:19:48,Webcam,Poacher Detected,11.7805,76.4092
+2025-11-30 10:15:57,Video,Poacher Detected,11.5953,76.5349
+2025-11-30 10:16:23,Webcam,Poacher Detected,11.5323,76.4382
+2026-01-22 12:10:35,Webcam,Poacher Detected,11.4106,76.4674
+2026-04-24 17:44:45,Webcam,Poacher Detected,11.5452,76.5658
+2026-05-03 11:14:57,Video,Poacher Detected,11.7781,76.5256
+2026-06-11 12:26:35,Video,Poacher Detected,11.4699,76.6904
+2026-09-26 11:31:51,Webcam,Poacher Detected,11.5405,76.6002

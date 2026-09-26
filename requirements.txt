@@ -1,0 +1,7 @@
+flask
+opencv-python
+opencv-contrib-python
+numpy
+pillow
+yt-dlp
+imutils
