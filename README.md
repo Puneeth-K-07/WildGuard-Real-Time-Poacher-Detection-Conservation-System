@@ -31,10 +31,7 @@ This repo consists of code used for training and detecting Poachers in wild usin
 * obj.data and obj.names files
 * train.txt file (test.txt is optional here as well)
 
-I referenced this tutorial from an [YouTube Video](https://www.youtube.com/channel/UCrydcKaojc44XnuXrfhlV8Q) by TheAIGuy channel.
-You can follow a step-by-step walkthrough of video and the code here: https://www.youtube.com/watch?v=10joRJt39Ns
 
-You can download the yolov3 pretrained weights by clicking [here](https://pjreddie.com/media/files/yolov3.weights) and yolov3-tiny [here](https://pjreddie.com/media/files/yolov3-tiny.weights)
 ****************************************************************************************************************************************
 
 ### ⚡ Colab Hack: ⭐
